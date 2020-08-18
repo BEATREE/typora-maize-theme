@@ -54,12 +54,13 @@ html {
 #write h4,
 #write h5,
 #write h6 {
-  margin: .5em 0;
+  margin: .72em 0;
   padding: 0px;
   font-weight: bold;
   color: black;
 }
 #write h1 {
+  margin: 1.2em 0;
   font-size: 2rem;
   /* text-align: center; */
 }
@@ -71,6 +72,7 @@ html {
 }
 #write h2 {
   font-size: 1.7rem;
+  margin: 1em 0;
 }
 #write h2 span {
  font-weight: bold;
