@@ -6,6 +6,9 @@
 }
 
 /* 全局属性 */
+:root{
+  --select-text-bg-color: #e49123;
+}
 ::selection {
 	background:#b981d1;
 	color:white
@@ -20,12 +23,11 @@
 }
 
 html {
-  background-color: #f6f6f6;
+  background-color: #fafafa;
 }
 #write {
   max-width: 914px;
   font-size: 16px;
-  line-height: 1.5;
   text-align: left;
   letter-spacing: 0px;
   font-family: "Fira Code", "微软雅黑","PingFang SC", "Microsoft YaHei", sans-serif;
@@ -117,18 +119,18 @@ html {
 }
 
 /* 字体加粗 */
-#write strong::before {
+/* #write strong::before {
   content: '「';
-}
+} */
 
 #write strong {
   color: #E49123;
   font-weight: bold;
 }
 
-#write strong::after {
+/* #write strong::after {
   content: '」';
-}
+} */
 
 /*引用*/
 #write blockquote {
@@ -166,8 +168,8 @@ html {
 /* background-color 由 rgba 转为 HEX*/
 #write code{
   font-size: 14px;
-  color:  rgb(235, 76, 55);;
-  background-color: #eceded;
+  color:  rgb(235, 76, 55);
+  background-color: #f0f0f0;
 }
 
 /* 行内代码 */
@@ -203,6 +205,7 @@ html {
 #write table tr th,
 #write table tr td {
   font-size: 16px;
+  line-height: 1.5;
   border: 1px solid #ccc;
   padding: 5px 10px;
   text-align: left;
@@ -242,8 +245,7 @@ html {
 /* 代码块主题 */
 code, .md-fences {
 	padding: .5em;
-  background-color: #292b35;
-	border: 1px solid #ccc;
+	/* border: 1px solid #ccc; */
 	padding: .1em;
 	border-radius: 5px;
 	margin-left: 0.2em;
@@ -252,17 +254,20 @@ code, .md-fences {
 }
 .md-fences {
   margin: 0 0 20px;
+  background-color: #292b35;
   color: rgb(236, 236, 236);
 	/* font-size: 1em; */
 	padding: 0.3em 1em;
   padding-top: 0.4em;
   box-shadow: 0px 4px 9px grey;
 }
-
 .CodeMirror div.CodeMirror-cursor {
-  margin-left: 5px;
+  margin-left: 4.6px;
   border-left: 1px solid #F8F8F8;
   z-index: 5;
+}
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(113, 124, 180, 0.2);
 }
 .CodeMirror-code{
   margin-left: 5px;
