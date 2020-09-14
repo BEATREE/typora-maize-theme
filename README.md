@@ -1,5 +1,7 @@
 # Maize 主题
 
+欢迎大家提出 `Issue` 以及 `Pull request`
+
 \[中文|[English](./README_EN.md)]
 
 > 一个简洁美观的 Typora 主题，欢迎体验~
