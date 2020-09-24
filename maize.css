@@ -8,6 +8,25 @@
 /* 全局属性 */
 :root{
   --select-text-bg-color: #e49123;
+  --bg-color:  #fafafa;                   /*change background*/
+  --text-color: #333333;                  /*change text color*/
+  --md-char-color: #C7C5C5;               /*change color of meta characetrs like `*` in markdown */
+  --meta-content-color: #5b808d;          /*change color of meta contents like image text or link address in markdown */
+
+  --primary-color: #428bca;               /* color of primary buttons */
+  --primary-btn-border-color: #285e8e;
+  --primary-btn-text-color: #fff;
+
+  --window-border: 1px solid #eee;        /*border for sidebar, etc*/
+
+  --active-file-bg-color: #eee;           /*background color if list item in file tree or file list*/
+  --active-file-text-color: inherit;
+  --active-file-border-color: #777;
+
+  --side-bar-bg-color: var(--bg-color);     /*change background of sidebar*/
+  --item-hover-bg-color: rgba(229, 229, 229, 0.59); /*background of control items when hover, like menu in sidebar*/
+  --item-hover-text-color: inherit;
+  --monospace: monospace;                   /*monospace font for codes, fences*/
 }
 ::selection {
 	background:#b981d1;
@@ -22,9 +41,6 @@
 	color:white
 }
 
-html {
-  background-color: #fafafa;
-}
 #write {
   max-width: 914px;
   font-size: 16px;
@@ -263,7 +279,7 @@ code, .md-fences {
 }
 .CodeMirror div.CodeMirror-cursor {
   margin-left: 4.6px;
-  border-left: 1px solid #F8F8F8;
+  border-left: 1px solid #7ba0f0;
   z-index: 5;
 }
 .cm-s-inner div.CodeMirror-selected {
@@ -332,4 +348,13 @@ code, .md-fences {
 .cm-s-inner .cm-error {
   color: rgba(255, 255, 255, 1);
   background-color: #e9405c;
+}
+
+/*流程图样式*/
+pre[lang='sequence'],
+pre[lang='flow'],
+pre[lang='mermaid']
+{
+  background: #ffffff;
+  color: #333333;
 }
